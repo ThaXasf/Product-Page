@@ -1,0 +1,431 @@
+<header id="header">
+
+<div class="logo">
+<img id="header-img" src="https://cdn11.bigcommerce.com/s-stm8v/images/stencil/250x100/logo-a_1544839226__36928.original.png" alt="Golf Wang Web Box Logo">
+</div>
+
+<nav id="nav-bar">
+<ul>
+<li><a class="nav-link" href="#GOLF">GOLF</a></li>
+<li><a class="nav-link" href="#how-it-looks">How It Looks</a></li>
+<li><a class="nav-link" href="#pricing">Pricing</a></li>
+</ul>
+</nav>
+
+<!-- CSS CSS  CSS CSS  CSS CSS  CSS CSS  CSS CSS  CSS CSS  CSS CSS  CSS CSS -->
+<style>
+/* Global element styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ /* Global classes styling */
+
+ #grad {
+   background-image: linear-gradient(to right, red , yellow);
+ }
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: pink;
+
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  width: 60vw;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+
+#hero > h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#hero input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#hero input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: pink;
+}
+
+#hero input[type="submit"]:hover {
+  background-color: #96bcfa;
+  transition: background-color 1s;
+}
+
+@media (max-width: 650px) {
+  #hero {
+    margin-top: 120px;
+  }
+}
+
+#how-it-looks {
+  margin-top: 30px;
+}
+
+#GOLF .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+}
+
+@media (max-width: 550px) {
+  #GOLF .icon {
+    display: none;
+  }
+}
+
+#GOLF .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+@media (max-width: 550px) {
+  #GOLF .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  #GOLF {
+    margin-top: 0;
+  }
+}
+
+#how-it-looks {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#how-it-works > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: pink;
+  font-weight: 400;
+}
+
+.product > button:hover {
+  background-color: #96bcfa;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+}
+
+</style>
+<!-- CSS CSS  CSS CSS  CSS CSS  CSS CSS  CSS CSS  CSS CSS  CSS CSS  CSS CSS -->
+
+</header>
+<body style="background-image: linear-gradient(to right, #ffc2c2, #bda2a2);">
+</body>
+
+
+<div class="container"></div>
+<section id="hero">
+<h2>GOLF WANG</h2>
+<form id="form" action="https://www.freecodecamp.com/email-submit">
+<input name="email" id="email" type="email" placeholder="Enter your email address " required="">
+<input id="submit" type="submit" value="Here we go" class="btn">
+</form>
+</section>
+
+<div class="container">
+<section id="GOLF">
+<div class="grid">
+<div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+<div class="desc">
+<h2>The Music</h2>
+<p>
+GOLF WANG provides amazing music you can listen to on any streaming service.
+</p>
+</div>
+</div>
+<div class="grid">
+<div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+<div class="desc">
+<h2>The Clothes</h2>
+<p>
+We make beautiful clothes for fans to wear. We create various styles of clothes to make sure you can express yourself to the fullest.
+</p>
+</div>
+</div>
+<div class="grid">
+<div class="icon">
+<i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+</div>
+<div class="desc">
+<h2>The Tour</h2>
+<p>
+Join us! We enjoy vibin' out with our community, be sure to get some tickets to our tour.
+</p>
+</div>
+</div>
+</section>
+
+<section id="how-it-looks">
+<iframe width="637" height="394" src="https://www.youtube.com/embed/IrdzbRTk1n4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+
+
+
+<section id="pricing">
+<h2>Lastest drops at GOLF:</h2>
+<div class="product" id="Shoes">
+<div class="level"></div>
+<h2>C L O T H E S</h2>
+<ol>
+<li>Lorem ipsum.</li>
+<li>Lorem ipsum.</li>
+<li>Lorem ipsum dolor.</li>
+<li>Lorem ipsum.</li>
+</ol>
+<button class="btn">Select</button>
+</div>
+
+
+
+<div class="product" id="Stickers">
+<div class="level"></div>
+<h2>T O U R
+  dates</h2>
+<ol>
+<li>Lorem ipsum.</li>
+<li>Lorem ipsum.</li>
+<li>Lorem ipsum dolor.</li>
+<li>Lorem ipsum.</li>
+</ol>
+<button class="btn">Select</button>
+</div>
+
+
+
+<div class="product" id="Hoodies">
+<div class="level"></div>
+<h2>E V E R Y T H I N G
+  else</h2>
+<ol>
+<li>Lorem ipsum.</li>
+<li>Lorem ipsum.</li>
+<li>Lorem ipsum dolor.</li>
+<li>Lorem ipsum.</li>
+</ol>
+<button class="btn">Select</button>
+</div>
+
+</section>
+
+
+</div>
+
+
+<!--User Story #1: My product landing page should have a header element with a corresponding id="header".
+
+User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
+
+User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
+
+User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
+
+User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
+
+User Story #6: I can watch an embedded product video with id="video".
+
+User Story #7: My landing page has a form element with a corresponding id="form".
+
+User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
+
+User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
+
+User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+
+User Story #11: Within the form, there is a submit input with a corresponding id="submit".
+
+User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
+
+User Story #13: The navbar should always be at the top of the viewport.
+
+User Story #14: My product landing page should have at least one media query.
+
+User Story #15: My product landing page should utilize CSS flexbox at least once.-->
